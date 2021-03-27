@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="wastickerwhtspppack.allactorsandactress.bollywoodwasticker">
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+
+        <activity android:name="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.SpalshActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.LunchingStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.adpters.ContentRatingProvider"
+            android:authorities="${contentProviderAuthority}"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.whatsapp.sticker.READ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.AppListofPackGridViewActivity"
+            android:label="@string/title_activity_sticker_packs_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.PackDetailsActivity"
+            android:parentActivityName="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.AppListofPackGridViewActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.AppListofPackGridViewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.BagePackInfomationActivity"
+            android:label="@string/Bollywood_title_activity_sticker_pack_info"
+            android:parentActivityName="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.PackDetailsActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.PackDetailsActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

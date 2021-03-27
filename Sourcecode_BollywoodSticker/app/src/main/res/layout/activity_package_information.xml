@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/infoPageBackgroundColor"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    tools:context="wastickerwhtspppack.allactorsandactress.bollywoodwasticker.activitys.BagePackInfomationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tray_icon"
+            style="@style/InfoButtonStyle"
+            android:clickable="false"
+            android:drawableTint="@color/privacy"
+            android:text="@string/Bollywood_info_screen_tray_icon"
+            android:textColor="#B9B9B9"
+            tools:drawableLeft="@drawable/webview_loaded"
+            tools:drawableStart="@drawable/webview_loaded"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/view_webpage"
+            style="@style/InfoButtonStyle"
+            android:drawableLeft="@drawable/webview_loaded"
+            android:drawableStart="@drawable/webview_loaded"
+            android:drawableTint="@color/privacy"
+            android:text="@string/Bollywood_view_webpage"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/send_email"
+            style="@style/InfoButtonStyle"
+            android:drawableLeft="@drawable/email_icon"
+            android:drawableStart="@drawable/email_icon"
+            android:drawableTint="@color/privacy"
+            android:text="@string/Bollywood_send_email"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/privacy_policy"
+            style="@style/InfoButtonStyle"
+            android:drawableLeft="@drawable/privacy_policy_icon"
+            android:drawableStart="@drawable/privacy_policy_icon"
+            android:drawableTint="@color/privacy"
+            android:text="@string/Bollywood_privacy_policy"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1093780401410",
+    "project_id": "bollywoodsticker",
+    "storage_bucket": "bollywoodsticker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093780401410:android:11a3ac9baff6dabe0f261b",
+        "android_client_info": {
+          "package_name": "wastickerwhtspppack.allactorsandactress.bollywoodwasticker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093780401410-edf22gdc7ob0vphjvp0u08gcvk1h40r7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtnaXL3v23idSvh6qdzKp77zhBFm8BXO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093780401410-edf22gdc7ob0vphjvp0u08gcvk1h40r7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
